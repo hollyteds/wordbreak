@@ -19,3 +19,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 add_action( 'wp_footer', function() {
 	wp_enqueue_script( 'budou-X', plugins_url( 'wordbreak/dist/js/main.js' ), array() );
 } );
+
+/**
+ * エディター用スタイル
+ */
+add_action( 'enqueue_block_editor_assets', function() {
+	wp_enqueue_style( 'budou-X', plugins_url( 'wordbreak/style.css' ), array() );
+} );

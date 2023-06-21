@@ -1,0 +1,17 @@
+.u-wbr {
+	position: relative;
+	border: 1px dotted #ff0000;
+	padding-top: calc( 0.5rem + var(--wp--preset--font-size--xsmall) );
+	padding-bottom: 0.5rem;
+}
+
+.u-wbr::before {
+	content: '［自動改行が適用されています］';
+	position: absolute;
+	width: 100%;
+	font-size: var(--wp--preset--font-size--xsmall);
+	font-weight: 400;
+	top:0;
+	left:0;
+	color: #ff0000;
+}
